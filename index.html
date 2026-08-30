@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aspirantes a Taxista</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #ffaa00; /* Color amarillo taxi */
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffaa00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #e69900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Registro de Aspirantes</h2>
+        
+        <form action="https://formsubmit.co/juegoprogramacion5@gmail.com" method="POST" enctype="multipart/form-data">
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html">
+
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="Nombre y Apellido" required placeholder="Ej: Juan Pérez">
+            </div>
+
+            <div class="form-group">
+                <label for="cedula">Cédula de Identidad</label>
+                <input type="text" id="cedula" name="Cedula" required placeholder="Ej: V-12345678">
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Número de Teléfono</label>
+                <input type="tel" id="telefono" name="Telefono" required placeholder="Ej: 0414-1234567">
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="Correo" required placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Foto del Vehículo</label>
+                <input type="file" id="foto" name="Foto del Vehículo" accept="image/*" required>
+            </div>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </div>
+
+</body>
+</html>
